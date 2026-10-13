@@ -1,0 +1,56 @@
+header {
+    /* This line styles my header section, it changes the background color, the color of the text, and the padding size */
+    background-color: #243447;
+    color: white;
+    padding: 25px;
+}
+main {
+    padding: 20px;
+}
+body {
+    text-align: center;
+    background-color: #dbeafe;
+}
+hr {
+    border: none;
+    height: 1px;
+    background-color: #243447;
+}
+h2 {
+    color: #243447;
+}
+nav ul {
+    /* This line adjust my navigation links horizontally*/
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+nav a {
+    /* This line styles my navigation links, changes the colors, remove the underlines, make the text bold, and I added a transition hover effect heheh*/
+    color: #243447;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+nav a:hover {
+    transform: scale(1.2);
+}
+table {
+    margin: 0 auto;
+}
+th, td {
+    border: 1px solid #243447;
+    padding: 10px;
+}
+ul, ol {
+    text-align: left;
+    display: inline-block;
+}
+footer {
+    background-color: #243447;
+    color: white;
+    padding: 15px;
+}
