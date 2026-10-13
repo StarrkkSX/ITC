@@ -1,0 +1,20 @@
+//BSCS - 1B | PURISIMA, KENT DORY C.//
+
+1. What was easy?
+
+The easiest part was creating the HTML because I had already worked on an "About Me" webpage project with basic CSS styles before.
+I reread some old resources and watched YouTube tutorials to refresh my knowledge, so I was able to follow the instructions more easily. 
+I also found the project fun and manageable, which motivated me to spend hours relearning and studying web development.
+
+2. What was confusing?
+
+At first, I struggled to remember the syntax needed to produce the desired output, especially in CSS, since I only knew the basics. 
+It took me some time to relearn the concepts and understand how to apply them. 
+I also found designing the webpage challenging because I don't consider myself very creative when it comes to visual design.
+
+3. What is one thing you would improve?
+
+I would improve my CSS skills to make my webpage look more polished and visually appealing. 
+I want to explore CSS further and learn how to create more elegant designs. 
+Since the start of the school year, I have focused more on C and Python and stopped practicing web development as much, which is why I feel a little behind. 
+However, I see this lesson as a great opportunity to relearn front-end development, and I hope to continue learning it even after this lesson ends.
