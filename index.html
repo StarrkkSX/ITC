@@ -4,61 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <title>PURISIMA, KENT DORY C. | ABOUT ME </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-    <h1>Hello, World! I'm Kent.</h1>
-</header>
-<h3>Figuring out the world, one question at a time.</h3>
-<div class="nav-container">
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#sched">Schedule</a></li>
-            <li><a href="#fav">Favorites</a></li>
-        </ul>
-    </nav>
-    
-    <button id="themeToggle" class="theme-toggle" type="button">
-        <span id="themeIcon">☾</span>
-    </button>
+<header class="main-header">
+    <div class="top-nav">
 
-</div>
-<hr>
+        <h2 class="logo">Hello World, I'm Kent!</h2>
+
+        <nav>
+            <a href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#hobbies">HOBBIES</a>
+            <a href="#sched">SCHEDULE</a>
+            <a href="#fav">FAVORITES</a>
+
+            <button id="themeToggle" class="theme-toggle" type="button">
+                <span id="themeIcon">☾</span>
+            </button>
+        </nav>
+
+    </div>
+</header>
 <main>
 <br>
-<section id="about" class="content-card about-card">
+<section id="home" class="home-hero">
+    <div class="home-content">
+        <img src="images/Noone.jpeg" alt="None" class="home-image">
+        <p class="home-label">WELCOME TO MY PORTFOLIO</p>
 
-    <div class="about-text">
-        <h2>About Me</h2>
+        <h1>Hello, I'm Kent.</h1>
 
-        <p>
-            Hi! My name is Kent Dory C. Purisima, I am a
-            1st Year BSCS Student from Bicol University.
-            I am passionate about technology and programming,
-            and I aspire to become a skilled software developer
-            in the future.
+        <h2>A Computer Science Student.</h2>
+
+        <p class="home-description">
+            <b>"To fall asleep you must first pretend to sleep.
+            Therefore, the key to life is larping"</b>
         </p>
 
-        <p>
-            In my free time, I enjoy exploring new technologies,
-            playing video games, and spending time with friends
-            and family.
-        </p>
+        <a href="#about" class="home-button">
+            Explore My Portfolio
+        </a>
     </div>
+</section>
+<section id="about" class="page-section">
 
-    <div class="about-image">
-        <img src="kent.jpg" alt="My Profile Picture">
+    <div class="content-card about-card">
+
+        <div class="about-text">
+            <h2>About Me</h2>
+
+            <p>
+                Hi! My name is <strong>Kent Dory C. Purisima</strong>.
+                I am a 1st Year BSCS student from Bicol University.
+                I am passionate about technology and programming,
+                and I aspire to become a skilled software developer
+                in the future.
+            </p>
+
+            <p>
+                In my free time, I enjoy exploring new technologies,
+                playing video games, watching anime, and spending
+                time with friends and family.
+            </p>
+        </div>
+
+        <div class="about-image">
+            <img src="images/kent.jpg" alt="My personal photo">
+        </div>
+
     </div>
 
 </section>
 <br>
-<section class="card">
-    <h2 id="sched">My Class Schedule</h2>
+<section id="hobbies" class="page-section">
+
+    <div class="content-card hobbies-card">
+
+        <h2 class="section-title">Hobbies and Goals</h2>
+
+        <div class="hobbies-goals">
+
+            <div class="hobbies-column">
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Playing Online Games</li>
+                    <li>Watching Anime and Doomscrolling</li>
+                    <li>Going to the Gym</li>
+                </ul>
+            </div>
+
+            <div class="goals-column">
+                <h3>Goals</h3>
+                <ol>
+                    <li>Be rich</li>
+                    <li>Finish my Degree</li>
+                    <li>Become a Software Developer/Engineer</li>
+                </ol>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<br>
+<section id="sched" class="page-section">
+    <div class="card section-card">
+    <h2>My Class Schedule</h2>
     <table> 
         <thead>
             <tr>
@@ -108,23 +163,53 @@
         </tr>
         </tbody>
     </table>
+    </div>
     <!--tr creates the table row, th defines the header in the table, and td is the individual cell in a row that holds the contents like text and links-->
 </section>
 <br>
-<section class="card">
-    <h2 id="fav">My Favorites</h2>
-    <ul>
-        <li>Favorite Color: Blue</li>
-        <li>Favorite Food: Pizza</li>
-        <li>Favorite Movie: Jujutsu Kaisen 0</li>
-        <li>Favorite Online Games: CODM & MLBB</li>
-        <li>Favorite Programming Language: Python</li>
-    </ul>
-    <p>
-        <a href="https://anikototv.to/" target="_blank" rel="noopener">Anikototv</a> is a website I enjoy visiting because I can watch all the anime I like for free with little to no ads.
-    </p>
-    <!-- The href attribute specifies the destination that a link opens when clicked. -->
+<section id="fav" class="content-card favorites-card">
+
+    <h2>My Favorites</h2>
+
+    <div class="favorites-grid">
+
+        <div class="favorite-item">
+            <img src="images/food.jpg" alt="French Fries">
+            <div class="favorite-overlay">
+                <h3>Favorite Food</h3>
+                <p>French Fries</p>
+            </div>
+        </div>
+
+        <div class="favorite-item">
+            <img src="images/cod.png" alt="Call of Duty">
+            <div class="favorite-overlay">
+                <h3>Favorite Game</h3>
+                <p>Call of Duty</p>
+            </div>
+        </div>
+
+        <div class="favorite-item">
+            <img src="images/tokyo-ghoul.jpg" alt="Tokyo Ghoul">
+            <div class="favorite-overlay">
+                <h3>Favorite Anime</h3>
+                <p>Tokyo Ghoul</p>
+            </div>
+        </div>
+
+        <div class="favorite-item">
+            <img src="images/python.png" alt="Python Programming">
+            <div class="favorite-overlay">
+                <h3>Favorite Language</h3>
+                <p>Python</p>
+            </div>
+        </div>
+
+    </div>
+
 </section>
+
+<!-- The href attribute specifies the destination that a link opens when clicked. -->
 </main>
     
     <footer>
