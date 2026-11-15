@@ -1,26 +1,102 @@
+:root {
+    --bg-color: #dbeafe;
+    --text-color: #243447;
+    --header-color: #243447;
+    --header-text: white;
+    --border-color: #243447;
+    --bg-image: url("tokyo-light.jpg");
+    --bg-overlay: rgba(240, 244, 250, 0.78);
+    --container-bg: rgba(255, 255, 255, 0.88);
+    --container-border: rgba(71, 118, 199, 0.3);
+}
+
+body.dark-theme {
+    --bg-color: #121212;
+    --text-color: #e5e7eb;
+    --header-color: #1e293b;
+    --header-text: white;
+    --border-color: #64748b;
+    --bg-image: url("tokyo-dark.jpg");
+    --bg-overlay: rgba(8, 8, 12, 0.55);
+    --container-bg: rgba(20, 25, 38, 0.88);
+    --container-border: rgba(145, 184, 255, 0.25);
+}
 header {
-    /* This line styles my header section, it changes the background color, the color of the text, and the padding size */
-    background-color: #243447;
-    color: white;
+    background-color: var(--header-color);
+    color: var(--header-text);
     padding: 25px;
 }
+.theme-toggle {
+    background-color: transparent;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    font-size: 22px;
+    cursor: pointer;
+    color: inherit;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+    transform: rotate(20deg);
+}
 main {
+    max-width: 880px;
+    margin: 40px auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 body {
     text-align: center;
-    background-color: #dbeafe;
+    background-color: var(--bg-color);
+
+    background-image:
+        linear-gradient(var(--bg-overlay), var(--bg-overlay)),
+        var(--bg-image);
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+.content-card {
+    background: var(--container-bg);
+    border: 1px solid var(--container-border);
+
+    border-radius: 40px;
+    padding: 35px;
+    margin-bottom: 30px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    text-align: center;
 }
 hr {
     border: none;
     height: 1px;
-    background-color: #243447;
+    background-color: var(--border-color);
 }
 h2 {
-    color: #243447;
+    color: var(--text-color);
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.nav-container nav ul {
+    margin: 0;
 }
 nav ul {
-    /* This line adjust my navigation links horizontally*/
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -28,7 +104,6 @@ nav ul {
     padding: 0;
 }
 nav a {
-    /* This line styles my navigation links, changes the colors, remove the underlines, make the text bold, and I added a transition hover effect heheh*/
     color: #243447;
     text-decoration: none;
     font-weight: bold;
@@ -43,12 +118,39 @@ table {
     border: 1px solid;
 }
 th, td {
-    border: 1px solid #243447;
+    border: 1px solid var(--border-color);
     padding: 10px;
 }
 ul, ol {
     text-align: left;
     display: inline-block;
+}
+.card {
+    background-color: var(--container-bg);
+    border: 1px solid var(--container-border);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 25px auto;
+    max-width: 1000px;
+}
+/* Center the overall content */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+
+/* Light mode */
+:root {
+    --container-bg: rgba(255, 255, 255, 0.88);
+    --container-border: rgba(71, 118, 199, 0.3);
+}
+
+/* Dark mode */
+body.dark-theme {
+    --container-bg: rgba(20, 25, 38, 0.88);
+    --container-border: rgba(145, 184, 255, 0.25);
 }
 footer {
     background-color: #243447;
