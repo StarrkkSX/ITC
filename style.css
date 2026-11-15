@@ -565,6 +565,89 @@ ul, ol {
         max-width: 300px;
     }
 }
+/* MOBILE RESPONSIVENESS */
+@media screen and (max-width: 768px) {
+
+    /* General layout */
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Navigation */
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    /* Hero section */
+    .hero {
+        padding: 30px 15px;
+        text-align: center;
+    }
+
+    .hero img {
+        width: 90%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    /* About Me section */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+        padding: 25px 15px;
+    }
+
+    .about-container img {
+        width: 80%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    .about-container p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    /* Favorites */
+    .favorites-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        width: 90%;
+    }
+
+    .favorite-card {
+        width: 100%;
+        max-width: 300px;
+        margin: auto;
+    }
+
+    /* Schedule table */
+    table {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px 6px;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 15px;
+        font-size: 13px;
+    }
+}
 footer {
     background-color: #080b13;
     color: white;
